@@ -172,10 +172,22 @@ button {
     inset: 0 0 auto;
     z-index: 100;
     padding: 10px 0;
-    background: rgba(255, 255, 255, .9);
-    backdrop-filter: blur(12px);
+    background: transparent;
     box-shadow: 0 2px 18px rgba(8, 27, 69, .08);
     transition: var(--transition);
+}
+
+/* Frosted blur lives on a pseudo-element instead of .header itself.
+   backdrop-filter on .header would make it the containing block for the
+   fixed-position mobile nav (.nav), breaking the slide-in menu layout. */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(255, 255, 255, .9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .header.is-scrolled {
@@ -1306,6 +1318,15 @@ button {
     margin-top: .35rem;
     font-size: .7rem;
     color: rgba(255, 255, 255, .38);
+}
+
+/* Hide floating buttons while the mobile menu is open so they
+   don't paint above the slide-in nav (tooltip layering fix) */
+body.nav-open .wa-float,
+body.nav-open .to-top {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none;
 }
 
 /* ============================================================

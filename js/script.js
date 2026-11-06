@@ -131,6 +131,7 @@
         nav.classList.remove("is-open");
         hamburger.classList.remove("is-open");
         hamburger.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
         document.body.style.overflow = "";
     }
 
@@ -138,10 +139,23 @@
         const open = nav.classList.toggle("is-open");
         hamburger.classList.toggle("is-open", open);
         hamburger.setAttribute("aria-expanded", String(open));
+        document.body.classList.toggle("nav-open", open);
         document.body.style.overflow = open ? "hidden" : "";
     });
 
     nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+    // close when tapping outside the menu panel
+    document.addEventListener("click", (e) => {
+        if (nav.classList.contains("is-open") && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+            closeMenu();
+        }
+    });
+
+    // close with the Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && nav.classList.contains("is-open")) closeMenu();
+    });
 
     /* ============================================================
        Reveal on scroll
