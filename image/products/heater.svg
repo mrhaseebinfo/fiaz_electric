@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" role="img" aria-label="Room heater and geyser rod illustration">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafd"/>
+      <stop offset="1" stop-color="#e7eef9"/>
+    </linearGradient>
+    <linearGradient id="hbody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e63d0"/>
+      <stop offset="1" stop-color="#123a8f"/>
+    </linearGradient>
+    <linearGradient id="horange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd34d"/>
+      <stop offset="1" stop-color="#ff6a00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- studio background -->
+  <rect width="800" height="530" fill="url(#bg2)"/>
+  <ellipse cx="400" cy="428" rx="235" ry="16" fill="#0b2464" opacity=".12"/>
+
+  <!-- heat waves -->
+  <g fill="none" stroke="url(#horange)" stroke-width="8" stroke-linecap="round" opacity=".9">
+    <path d="M292 182 c12 -20 12 -34 0 -54 c-12 -20 -12 -34 0 -52"/>
+    <path d="M398 172 c12 -20 12 -34 0 -54 c-12 -20 -12 -34 0 -52"/>
+    <path d="M504 182 c12 -20 12 -34 0 -54 c-12 -20 -12 -34 0 -52"/>
+  </g>
+
+  <!-- feet -->
+  <rect x="252" y="392" width="52" height="14" rx="6" fill="#081b45"/>
+  <rect x="496" y="392" width="52" height="14" rx="6" fill="#081b45"/>
+
+  <!-- heater body -->
+  <rect x="216" y="196" width="368" height="198" rx="24" fill="url(#hbody)"/>
+
+  <!-- front grill louvers -->
+  <g fill="#dce8fa">
+    <rect x="250" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="278" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="306" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="334" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="362" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="390" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="418" y="222" width="13" height="146" rx="6.5"/>
+    <rect x="446" y="222" width="13" height="146" rx="6.5"/>
+  </g>
+
+  <!-- control column -->
+  <rect x="476" y="216" width="92" height="158" rx="16" fill="#0b2464"/>
+
+  <!-- dial -->
+  <circle cx="522" cy="258" r="22" fill="url(#horange)"/>
+  <circle cx="522" cy="258" r="12" fill="#fff" opacity=".25"/>
+  <rect x="519" y="258" width="6" height="14" rx="3" fill="#fff"/>
+
+  <!-- indicator -->
+  <circle cx="522" cy="316" r="9" fill="#ff8a1e"/>
+  <circle cx="522" cy="316" r="16" fill="none" stroke="#ff8a1e" stroke-width="3" opacity=".55"/>
+
+  <!-- geyser rod lying in front -->
+  <g transform="rotate(-8 610 396)">
+    <rect x="540" y="386" width="150" height="20" rx="10" fill="#d7def2" stroke="#aab6d4" stroke-width="2"/>
+    <rect x="540" y="386" width="26" height="20" rx="8" fill="#ff6a00"/>
+    <circle cx="690" cy="396" r="7" fill="#0b2464"/>
+  </g>
+
+  <!-- power cord -->
+  <path d="M212 300 Q168 306 162 262" fill="none" stroke="#16233f" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- top highlight -->
+  <rect x="228" y="204" width="344" height="14" rx="7" fill="#fff" opacity=".18"/>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" role="img" aria-label="Electric steam iron illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafd"/>
+      <stop offset="1" stop-color="#e7eef9"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e63d0"/>
+      <stop offset="1" stop-color="#123a8f"/>
+    </linearGradient>
+    <linearGradient id="sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2464"/>
+      <stop offset="1" stop-color="#081b45"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd34d"/>
+      <stop offset="1" stop-color="#ff6a00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- studio background -->
+  <rect width="800" height="530" fill="url(#bg)"/>
+  <ellipse cx="400" cy="405" rx="270" ry="17" fill="#0b2464" opacity=".12"/>
+
+  <!-- power cable -->
+  <path d="M638 306 Q712 302 716 252 Q719 216 690 208" fill="none" stroke="#16233f" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- steam wisps -->
+  <g fill="none" stroke="#9cc0f5" stroke-width="7" stroke-linecap="round" opacity=".9">
+    <path d="M300 120 q10 -16 0 -32 q-10 -16 0 -30"/>
+    <path d="M400 108 q11 -18 0 -36 q-11 -18 0 -32"/>
+    <path d="M500 122 q10 -16 0 -32 q-10 -16 0 -30"/>
+  </g>
+
+  <!-- soleplate -->
+  <path d="M118 352 Q128 316 200 313 L602 313 Q680 316 683 352 Q683 374 618 378 L182 378 Q120 374 118 352 Z" fill="url(#sole)"/>
+
+  <!-- iron body -->
+  <path d="M182 313 L204 246 Q214 226 246 224 L468 224 Q560 227 600 258 L642 313 Z" fill="url(#body)"/>
+
+  <!-- handle (hollow) -->
+  <path fill-rule="evenodd" fill="#0b2464"
+        d="M244 226 Q252 143 336 139 L474 139 Q556 145 566 226 L502 226 Q494 196 466 192 L342 192 Q308 196 300 226 Z"/>
+
+  <!-- handle accent -->
+  <path d="M336 165 L472 165 Q512 168 522 190 L486 190 Q474 174 470 174 L340 174 Q330 174 328 186 Z" fill="url(#orange)" opacity=".95"/>
+
+  <!-- temperature dial -->
+  <circle cx="532" cy="262" r="21" fill="url(#orange)"/>
+  <circle cx="532" cy="262" r="11" fill="#fff" opacity=".25"/>
+  <rect x="529" y="262" width="6" height="13" rx="3" fill="#fff"/>
+
+  <!-- steam button -->
+  <rect x="320" y="196" width="58" height="16" rx="8" fill="#081b45"/>
+  <rect x="352" y="199" width="22" height="10" rx="5" fill="#ff8a1e"/>
+
+  <!-- steam vents on soleplate -->
+  <circle cx="470" cy="352" r="6" fill="#fff" opacity=".85"/>
+  <circle cx="502" cy="352" r="6" fill="#fff" opacity=".85"/>
+  <circle cx="534" cy="352" r="6" fill="#fff" opacity=".85"/>
+  <circle cx="566" cy="352" r="6" fill="#fff" opacity=".85"/>
+  <circle cx="598" cy="350" r="6" fill="#fff" opacity=".85"/>
+
+  <!-- highlight glint -->
+  <path d="M212 244 L232 232 L244 232 L224 246 Z" fill="#fff" opacity=".35"/>
+</svg>
